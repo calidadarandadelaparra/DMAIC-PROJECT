@@ -10,6 +10,8 @@ Plataforma web en español para crear, documentar, revisar y conservar proyectos
 - SIPOC visual con pasos de proceso ampliables y numeración automática.
 - Campos guiados y listas de selección para reducir ambigüedad entre integrantes.
 - Cálculos automáticos para Pareto, matriz de soluciones, FMEA, capacidad y SPC.
+- Resultados con el formato propio de cada método: Ishikawa, Pareto, 5 porqués, matriz de interesados, Gantt, gráficas de línea base y control, capacidad, VOC–CTQ y planes visuales.
+- Las herramientas cuyo estándar profesional es matricial —como FMEA, MSA, DOE y plan de control— conservan su tabla técnica con resaltado y cálculos automáticos.
 - Entregables ejecutivos con control de completitud, evidencia y estado.
 - Historial persistente de versiones en D1.
 - Exportación profesional a PDF en A4 horizontal o vertical según el entregable.
