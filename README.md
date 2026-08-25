@@ -4,8 +4,9 @@ Plataforma web en español para crear, documentar, revisar y conservar proyectos
 
 ## Funcionalidades
 
-- Dashboard y seguimiento por fases Define, Measure, Analyze, Improve y Control.
+- Dashboard con selector por fases, Gantt editable y seguimiento de entregables Define, Measure, Analyze, Improve y Control.
 - Biblioteca con 22 herramientas DMAIC editables, guardado automático y formato imprimible.
+- Espacios operativos de Analyze, Improve y Control con herramientas por fase, avance, criterios de salida y siguiente acción.
 - Project Charter y constructor de objetivos SMART editables e imprimibles en A4.
 - SIPOC visual con pasos de proceso ampliables y numeración automática.
 - Campos guiados y listas de selección para reducir ambigüedad entre integrantes.
@@ -52,3 +53,21 @@ node scripts/validate-artifact.mjs
 ```
 
 La compilación genera `dist/server/index.js`, el manifiesto de alojamiento y las migraciones de la base de datos.
+
+## Asistente DMAIC
+
+La interfaz incluye un asistente contextual que reconoce la fase y la herramienta activa. Siempre conserva una guía local para preguntas frecuentes y puede usar IA generativa desde el servidor sin exponer credenciales en el navegador.
+
+Para habilitar Cloudflare Workers AI en un despliegue compatible, configura el binding `AI` en Wrangler:
+
+```json
+{
+  "ai": {
+    "binding": "AI"
+  }
+}
+```
+
+El endpoint `POST /api/assistant` usa `env.AI.run()` y limita el contexto, la longitud de entrada y la salida. Si el binding no está disponible, la experiencia continúa con la guía contextual incorporada.
+
+Referencia: [Cloudflare Workers AI bindings](https://developers.cloudflare.com/workers-ai/configuration/bindings/).
