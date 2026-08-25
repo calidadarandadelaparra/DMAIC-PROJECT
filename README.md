@@ -5,8 +5,10 @@ Plataforma web en español para crear, documentar, revisar y conservar proyectos
 ## Funcionalidades
 
 - Dashboard con selector por fases, Gantt editable y seguimiento de entregables Define, Measure, Analyze, Improve y Control.
+- Gantt sincronizado con porcentaje manual, iconos de estado, relleno de avance y zoom por mes, semana, día u hora.
 - Biblioteca con 22 herramientas DMAIC editables, guardado automático y formato imprimible.
 - Espacios operativos de Analyze, Improve y Control con herramientas por fase, avance, criterios de salida y siguiente acción.
+- Inicio rápido dentro de cada fase: cada herramienta visible abre directamente su formato editable.
 - Project Charter y constructor de objetivos SMART editables e imprimibles en A4.
 - SIPOC visual con pasos de proceso ampliables y numeración automática.
 - Campos guiados y listas de selección para reducir ambigüedad entre integrantes.
