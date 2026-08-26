@@ -5,6 +5,9 @@ Plataforma web en español para crear, documentar, revisar y conservar proyectos
 ## Funcionalidades
 
 - Dashboard y seguimiento por fases Define, Measure, Analyze, Improve y Control.
+- Portafolio real con proyectos identificados de forma única y cambio seguro entre proyectos.
+- Identidad del usuario proporcionada por el alojamiento y autorización por membresía del proyecto.
+- Guardado centralizado por proyecto para Gantt, Charter, SMART, mediciones y borradores de herramientas, con respaldo local en Codespaces.
 - Biblioteca con 22 herramientas DMAIC editables, guardado automático y formato imprimible.
 - Project Charter y constructor de objetivos SMART editables e imprimibles en A4.
 - SIPOC visual con pasos de proceso ampliables y numeración automática.
@@ -15,6 +18,8 @@ Plataforma web en español para crear, documentar, revisar y conservar proyectos
 - Las herramientas cuyo estándar profesional es matricial —como FMEA, MSA, DOE y plan de control— conservan su tabla técnica con resaltado y cálculos automáticos.
 - Entregables ejecutivos con control de completitud, evidencia y estado.
 - Historial persistente de versiones en D1.
+- Esquema preparado para roles de propietario, patrocinador, líder, integrante y consulta.
+- Evidencias reales en almacenamiento privado con metadatos, autorización por proyecto, descarga y eliminación controlada.
 - Exportación profesional a PDF en A4 horizontal o vertical según el entregable.
 
 ## Criterios UX/UI aplicados

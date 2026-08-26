@@ -138,6 +138,8 @@ const page = String.raw`<!doctype html>
       @media(min-width:1101px){.gantt-head>div:nth-child(-n+5),.gantt-row>div:nth-child(-n+5){position:sticky;z-index:4;background:#fff}.gantt-head>div:nth-child(-n+5){z-index:6;background:#f9fafc}.gantt-head>div:nth-child(1),.gantt-row>div:nth-child(1){left:0}.gantt-head>div:nth-child(2),.gantt-row>div:nth-child(2){left:270px}.gantt-head>div:nth-child(3),.gantt-row>div:nth-child(3){left:362px}.gantt-head>div:nth-child(4),.gantt-row>div:nth-child(4){left:512px}.gantt-head>div:nth-child(5),.gantt-row>div:nth-child(5){left:662px;box-shadow:5px 0 10px rgba(23,32,51,.06)}}
       .phase-workbench{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:16px;align-items:start}.phase-tool-panel{padding:18px}.phase-tool-panel-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;margin-bottom:14px}.phase-tool-panel-head h2{font-size:18px;margin:3px 0}.phase-tool-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.phase-tool-button{border:1px solid var(--line);background:#fff;border-radius:9px;padding:13px;text-align:left;color:var(--ink);display:grid;grid-template-columns:38px 1fr auto;gap:10px;align-items:center;min-height:86px}.phase-tool-button:hover{border-color:#8bb3ff;background:#f7faff}.phase-tool-button .tool-icon{width:38px;height:38px}.phase-tool-button strong{font-size:12px;display:block}.phase-tool-button small{display:block;color:var(--muted);font-size:9px;line-height:1.35;margin-top:3px}.phase-tool-arrow{color:#2563eb;font-size:18px}.phase-side{display:grid;gap:12px;position:sticky;top:92px}.phase-gate{padding:16px}.phase-gate h3{margin:6px 0 9px}.phase-gate-list{list-style:none;padding:0;margin:0;display:grid;gap:8px}.phase-gate-list li{font-size:11px;color:#475467;display:flex;gap:8px}.phase-gate-list li:before{content:'○';color:#2563eb;font-weight:850}.phase-next{padding:16px;background:#172033;color:#fff}.phase-next .eyebrow{color:#9fc1ff}.phase-next p{font-size:11px;color:#c9d2df;line-height:1.5}.phase-next .btn{width:100%}
       .ai-launcher{position:fixed;right:24px;bottom:24px;z-index:48;border:0;border-radius:999px;background:#172033;color:#fff;padding:13px 17px;font-weight:800;box-shadow:0 12px 30px rgba(23,32,51,.24);display:flex;align-items:center;gap:8px}.ai-launcher span{width:24px;height:24px;border-radius:7px;background:#2563eb;display:grid;place-items:center}.ai-panel{position:fixed;right:24px;bottom:84px;z-index:49;width:min(390px,calc(100vw - 32px));max-height:min(650px,calc(100vh - 110px));background:#fff;border:1px solid var(--line);border-radius:13px;box-shadow:0 24px 60px rgba(16,24,40,.22);display:none;grid-template-rows:auto minmax(190px,1fr) auto;overflow:hidden}.ai-panel.open{display:grid}.ai-head{padding:14px 15px;background:#172033;color:#fff;display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.ai-head h2{font-size:14px;margin:0}.ai-head p{font-size:10px;color:#bac5d3;margin:3px 0 0}.ai-close{border:0;background:rgba(255,255,255,.1);color:#fff;width:30px;height:30px;border-radius:7px}.ai-messages{padding:14px;overflow:auto;background:#f7f8fa;display:grid;gap:10px;align-content:start}.ai-message{max-width:88%;padding:10px 11px;border-radius:10px;font-size:11px;line-height:1.5;white-space:pre-wrap}.ai-message.assistant{background:#fff;border:1px solid #dfe4ea}.ai-message.user{justify-self:end;background:#2563eb;color:#fff}.ai-suggestions{display:flex;gap:6px;flex-wrap:wrap;padding:0 14px 10px;background:#f7f8fa}.ai-suggestions button{border:1px solid #cfdae8;background:#fff;border-radius:999px;padding:6px 8px;font-size:9px;color:#344054}.ai-form{padding:12px;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr auto;gap:8px}.ai-form textarea{resize:none;min-height:44px;max-height:105px;border:1px solid #cfd6df;border-radius:8px;padding:10px;font-size:11px}.ai-context{grid-column:1/-1;font-size:9px;color:var(--muted)}
+      .project-switcher{display:grid;gap:2px}.project-switcher label{font-size:10px;color:var(--muted)}.project-switcher select{min-width:260px;max-width:420px;border:0;background:transparent;color:var(--ink);font-weight:800;padding:1px 24px 1px 0}.project-switcher select:focus{outline:2px solid #93c5fd;outline-offset:3px;border-radius:4px}.sync-note{display:flex;align-items:center;gap:6px}.sync-note:before{content:"";width:7px;height:7px;border-radius:50%;background:#12b76a}.portfolio-empty{padding:28px 18px;text-align:center;color:var(--muted);font-size:12px}.project-row[data-project-id]{cursor:pointer}.project-row[data-project-id]:hover{background:#f8fafc}.identity-name{font-size:11px;color:var(--muted);max-width:150px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+      .evidence-input{display:none}.evidence-list{display:grid;gap:6px;width:100%;margin-top:5px;text-align:left}.evidence-item{display:grid;grid-template-columns:1fr auto;gap:6px;align-items:center;padding:7px 8px;border:1px solid #d9e4e2;border-radius:7px;background:#fff;color:#344054}.evidence-item a{color:#1d4ed8;text-decoration:none;font-weight:700;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.evidence-item small{grid-column:1/-1;color:#667085}.evidence-remove{border:0;background:transparent;color:#b42318;font-size:15px;padding:2px 4px}.evidence-uploading{opacity:.7;pointer-events:none}
       @media(max-width:1100px){.phase-launcher{grid-template-columns:repeat(3,1fr)}.phase-workbench{grid-template-columns:1fr}.phase-side{position:static;grid-template-columns:1fr 1fr}.phase-tool-grid{grid-template-columns:repeat(2,1fr)}}
       @media(max-width:820px){.phase-launcher{grid-template-columns:1fr 1fr}.phase-command-result{grid-template-columns:1fr}.phase-tool-grid{grid-template-columns:1fr}.phase-side{grid-template-columns:1fr}.phase-quickstart{grid-template-columns:1fr}.ai-launcher{right:16px;bottom:78px}.ai-panel{right:16px;bottom:136px}}
       @media(max-width:560px){.phase-launcher{grid-template-columns:1fr}.phase-command-head{display:block}.phase-launch{min-height:70px}.quick-tool-list{display:grid;grid-template-columns:1fr 1fr}.quick-tool-chip{justify-content:flex-start}.ai-launcher{padding:11px 13px}.ai-launcher b{display:none}}
@@ -154,22 +156,22 @@ const page = String.raw`<!doctype html>
           <button class="side-link" data-view="tools"><span class="nav-icon">⌘</span>Herramientas</button>
           <button class="side-link" data-view="team"><span class="nav-icon">◎</span>Equipo</button>
         </nav>
-        <div class="side-note"><strong><span class="dot-live"></span>Modo de prueba</strong>Los cambios se guardan en este dispositivo. Ideal para validar el flujo antes de conectar la base de datos.</div>
+        <div class="side-note"><strong><span class="dot-live"></span>Proyecto protegido</strong>Los datos se separan por proyecto y se sincronizan para continuar desde otro dispositivo.</div>
       </aside>
       <main class="main">
         <header class="topbar">
-          <div><div class="crumb">Proyectos / <span id="crumbPhase">Resumen</span></div><div class="project-title" id="topProjectTitle">Mejora de producción — Planta Norte</div></div>
-          <div class="top-actions"><button class="btn primary" data-open="project">＋ Nuevo proyecto</button><button class="btn" aria-label="Notificaciones">♢ <span class="badge warn">2</span></button><div class="avatar">MP</div></div>
+          <div class="project-switcher"><label for="projectSelector">Proyectos / <span id="crumbPhase">Resumen</span></label><select id="projectSelector" aria-label="Cambiar proyecto"><option>Cargando proyectos…</option></select><div class="project-title" id="topProjectTitle" hidden>Mejora de producción — Planta Norte</div></div>
+          <div class="top-actions"><span class="identity-name" id="identityName">Sesión protegida</span><button class="btn primary" data-open="project">＋ Nuevo proyecto</button><button class="btn" aria-label="Notificaciones">♢ <span class="badge warn">2</span></button><div class="avatar" id="identityAvatar">MP</div></div>
         </header>
         <div class="content">
           <section class="view active" id="view-dashboard">
-            <div class="page-head"><div><div class="eyebrow">Portafolio de mejora</div><h1>Buenos días, equipo</h1><p>Prioridades, riesgos y próximos pasos en un solo lugar.</p></div><div class="mode-pill"><b>●</b> Datos demostrativos</div></div>
+            <div class="page-head"><div><div class="eyebrow">Portafolio de mejora</div><h1>Buenos días, equipo</h1><p>Prioridades, riesgos y próximos pasos en un solo lugar.</p></div><div class="mode-pill sync-note">Sincronización activa</div></div>
             <article class="card hero-card">
-              <div><div class="eyebrow">Proyecto prioritario</div><h2 id="heroProjectTitle">Mejora de producción — Planta Norte</h2><p>Reducir el tiempo de ciclo y la variación del proceso sin comprometer seguridad, calidad ni capacidad de entrega.</p><div class="hero-actions"><button class="btn primary" data-view="define">Continuar proyecto →</button><button class="btn" data-open="project">Iniciar otro proyecto</button><button class="btn soft" data-view="tools">Explorar herramientas</button></div></div>
+              <div><div class="eyebrow">Proyecto prioritario</div><h2 id="heroProjectTitle">Mejora de producción — Planta Norte</h2><p id="heroProjectProblem">Reducir el tiempo de ciclo y la variación del proceso sin comprometer seguridad, calidad ni capacidad de entrega.</p><div class="hero-actions"><button class="btn primary" data-view="define">Continuar proyecto →</button><button class="btn" data-open="project">Iniciar otro proyecto</button><button class="btn soft" data-view="tools">Explorar herramientas</button></div></div>
               <div class="score-box"><div class="ring" style="--p:68"><strong>68%</strong></div><div><span class="subtle">Avance general</span><b>Fase Measure</b><span class="subtle">Próxima revisión: 26 Ago</span><div class="phase-mini"><span></span></div></div></div>
             </article>
             <div class="grid cols-4" style="margin-top:16px">
-              <article class="card stat"><div class="stat-label">Proyectos activos <span>▣</span></div><strong>6</strong><span class="trend">＋ 2 este trimestre</span></article>
+              <article class="card stat"><div class="stat-label">Proyectos activos <span>▣</span></div><strong id="activeProjectCount">0</strong><span class="trend" id="portfolioProjectNote">Cargando portafolio…</span></article>
               <article class="card stat"><div class="stat-label">Tareas completadas <span>✓</span></div><strong>24 / 35</strong><span class="trend">68.6% del plan</span></article>
               <article class="card stat"><div class="stat-label">Entregables en revisión <span>◫</span></div><strong>3</strong><span class="trend warn">1 requiere atención</span></article>
               <article class="card stat"><div class="stat-label">Beneficio estimado <span>↗</span></div><strong>$420 mil</strong><span class="trend">MXN anualizados</span></article>
@@ -188,9 +190,7 @@ const page = String.raw`<!doctype html>
               <article class="card">
                 <div class="card-toolbar"><div><h2>Proyectos recientes</h2><span class="subtle">Vista del portafolio</span></div><button class="btn small" data-open="project">＋ Nuevo</button></div>
                 <div class="project-row header"><div>Proyecto</div><div>Fase</div><div>Responsable</div><div>Avance</div><div>Estado</div></div>
-                <div class="project-row"><div class="project-name">Mejora de producción<small>Operaciones · Planta Norte</small></div><div><span class="badge">Measure</span></div><div>Ana M.</div><div class="progress-inline"><div class="bar"><span style="width:68%"></span></div>68%</div><div><span class="badge warn">Atención</span></div></div>
-                <div class="project-row"><div class="project-name">Reducir retrabajos<small>Calidad · Línea 2</small></div><div><span class="badge">Analyze</span></div><div>Carlos R.</div><div class="progress-inline"><div class="bar"><span style="width:54%"></span></div>54%</div><div><span class="badge">En curso</span></div></div>
-                <div class="project-row"><div class="project-name">Optimizar carga<small>Logística · Patio</small></div><div><span class="badge gray">Define</span></div><div>María P.</div><div class="progress-inline"><div class="bar"><span style="width:22%"></span></div>22%</div><div><span class="badge gray">En curso</span></div></div>
+                <div id="projectPortfolioRows"><div class="portfolio-empty">Cargando proyectos autorizados…</div></div>
               </article>
               <article class="card card-pad"><div class="eyebrow">Siguiente mejor acción</div><h2 style="margin-top:5px">Completar la línea base</h2><p class="subtle" style="line-height:1.55">Faltan 2 días de captura para validar que el proceso esté representado antes de pasar a Analyze.</p><ul class="check-list"><li><span class="check">✓</span><div><b>Definición operacional validada</b><br><span class="subtle">Aprobada por Calidad</span></div></li><li><span class="check">✓</span><div><b>Sistema de medición aceptable</b><br><span class="subtle">R&amp;R = 8.6%</span></div></li><li><span class="check pending">!</span><div><b>Completar 30 observaciones</b><br><span class="subtle">Actualmente 24 de 30</span></div></li></ul><button class="btn soft" data-view="measure" style="width:100%;margin-top:12px">Ir a Measure</button></article>
             </div>
@@ -302,7 +302,7 @@ const page = String.raw`<!doctype html>
               <aside class="workspace-side">
                 <article class="card workspace-score"><div class="workspace-score-head"><div class="ring small" id="workspaceRing" style="--p:0"><strong id="workspaceScore">0%</strong></div><div><h3>Avance de la herramienta</h3><span class="subtle" id="workspaceScoreLabel">Comienza a documentar</span></div></div><div class="workspace-metric"><span>Celdas completadas</span><strong id="workspaceCells">0/0</strong></div><div class="workspace-metric"><span>Filas de análisis</span><strong id="workspaceRowsCount">0</strong></div><div class="workspace-metric method-hint" id="workspaceMethodHint"><span>Proceso SIPOC</span><strong id="workspaceMethodValue">5 pasos</strong></div></article>
                 <article class="card workspace-guide"><div class="eyebrow">Guía rápida</div><h3 id="workspaceGuideTitle">Qué debes completar</h3><p id="workspaceGuideCopy"></p><ul id="workspaceRequirements"></ul></article>
-                <article class="card evidence-box"><div class="tool-icon">↥</div><div><h3>Evidencias</h3><p class="subtle">Adjunta datos, fotografías, gráficas o documentos que respalden el análisis.</p></div><button class="btn" id="attachEvidence">＋ Adjuntar evidencia</button><span class="subtle" id="evidenceStatus">Sin archivos adjuntos</span></article>
+                <article class="card evidence-box" id="evidenceBox"><div class="tool-icon">↥</div><div><h3>Evidencias</h3><p class="subtle">Adjunta datos, fotografías, gráficas o documentos que respalden el análisis.</p></div><button class="btn" id="attachEvidence">＋ Adjuntar evidencia</button><input class="evidence-input" id="evidenceFileInput" type="file" accept=".pdf,.png,.jpg,.jpeg,.webp,.xlsx,.xls,.xlsm,.csv,.txt,.docx"/><span class="subtle" id="evidenceStatus">Sin archivos adjuntos</span><div class="evidence-list" id="evidenceList"></div></article>
               </aside>
             </div>
             <section class="deliverable-preview" id="workspacePreview" aria-label="Vista previa del entregable">
@@ -364,6 +364,10 @@ const page = String.raw`<!doctype html>
         {id:'control',letter:'C',label:'Control'}
       ];
       var currentView = 'dashboard';
+      var currentProjectId = '';
+      var projectCatalog = [];
+      var currentUser = null;
+      var serverPersistenceAvailable = false;
       var projectStep = 0;
       var phaseIndex = {define:0,measure:1,analyze:2,improve:3,control:4};
       var activeToolFilter = 'all';
@@ -371,6 +375,25 @@ const page = String.raw`<!doctype html>
       var smartLoadedProject='';
       var smartIds=['smartSpecific','smartMetric','smartUnit','smartBaseline','smartTarget','smartAchievable','smartRelevant','smartDeadline'];
       var smartDefaults={smartSpecific:'Reducir el tiempo de ciclo promedio del proceso de producción en Planta Norte',smartMetric:'Tiempo de ciclo promedio',smartUnit:'minutos',smartBaseline:'18.4',smartTarget:'15',smartAchievable:'El equipo puede reducir esperas y estandarizar el flujo utilizando los recursos actuales, sin aumentar la plantilla.',smartRelevant:'Mejorar el cumplimiento de entregas, recuperar capacidad y disminuir horas extra.',smartDeadline:'2026-11-30'};
+      function projectScopedStorageKey(kind,projectId){return 'dmaicProject_'+(projectId||currentProjectStorageId())+'_'+kind;}
+      function currentProject(){return projectCatalog.find(function(project){return project.id===currentProjectId;})||null;}
+      function localProjects(){try{var items=JSON.parse(localStorage.getItem('dmaicLocalProjects'));return Array.isArray(items)?items:[];}catch(e){return [];}}
+      function saveLocalProjects(){localStorage.setItem('dmaicLocalProjects',JSON.stringify(projectCatalog.filter(function(project){return project.localOnly;})));}
+      async function apiJson(path,options){var response=await fetch(path,options||{}),data=await response.json();if(!response.ok)throw new Error(data.error||'No fue posible completar la operación.');return data;}
+      async function fetchProjectRecord(recordType){if(!serverPersistenceAvailable||!currentProjectId)return null;try{var data=await apiJson('/api/project-record?project_id='+encodeURIComponent(currentProjectId)+'&record_type='+encodeURIComponent(recordType));return data.item&&data.item.payload!=null?data.item.payload:null;}catch(e){return null;}}
+      async function saveProjectRecord(recordType,payload){if(!serverPersistenceAvailable||!currentProjectId)return false;try{await apiJson('/api/project-record?project_id='+encodeURIComponent(currentProjectId)+'&record_type='+encodeURIComponent(recordType),{method:'PUT',headers:{'content-type':'application/json'},body:JSON.stringify({payload:payload})});return true;}catch(e){return false;}}
+      function evidenceSize(bytes){var value=Number(bytes)||0;if(value<1024)return value+' B';if(value<1048576)return (value/1024).toFixed(1)+' KB';return (value/1048576).toFixed(1)+' MB';}
+      function renderEvidenceList(){workspaceEvidence=workspaceEvidenceItems.length>0;document.getElementById('evidenceStatus').textContent=workspaceEvidenceItems.length?workspaceEvidenceItems.length+' '+(workspaceEvidenceItems.length===1?'evidencia vinculada':'evidencias vinculadas'):'Sin archivos adjuntos';document.getElementById('evidenceList').innerHTML=workspaceEvidenceItems.map(function(item){return '<div class="evidence-item"><a href="/api/evidence/'+encodeURIComponent(item.id)+'/download" target="_blank" rel="noopener">'+escapeHtml(item.file_name)+'</a><button class="evidence-remove" data-evidence-delete="'+escapeHtml(item.id)+'" aria-label="Eliminar '+escapeHtml(item.file_name)+'">×</button><small>'+evidenceSize(item.size_bytes)+' · '+escapeHtml(item.uploaded_by||'Equipo')+'</small></div>';}).join('');}
+      async function loadEvidenceItems(){workspaceEvidenceItems=[];renderEvidenceList();if(!serverPersistenceAvailable||!currentProjectId||!workspaceToolId)return;try{var data=await apiJson('/api/evidence?project_id='+encodeURIComponent(currentProjectId)+'&tool_id='+encodeURIComponent(workspaceToolId));workspaceEvidenceItems=data.items||[];renderEvidenceList();}catch(e){document.getElementById('evidenceStatus').textContent='Evidencias no disponibles';}}
+      async function uploadEvidence(file){if(!serverPersistenceAvailable){toast('La carga de archivos funciona en la versión publicada.');return;}if(!file)return;var box=document.getElementById('evidenceBox'),button=document.getElementById('attachEvidence'),form=new FormData();form.append('project_id',currentProjectId);form.append('tool_id',workspaceToolId);form.append('file',file);box.classList.add('evidence-uploading');button.textContent='Subiendo…';try{var response=await fetch('/api/evidence',{method:'POST',body:form}),data=await response.json();if(!response.ok)throw new Error(data.error||'No fue posible subir el archivo.');workspaceEvidenceItems.unshift(data.item);renderEvidenceList();saveWorkspace(true);toast('Evidencia adjuntada al proyecto');}catch(e){toast(e.message||'No fue posible adjuntar la evidencia');}finally{box.classList.remove('evidence-uploading');button.textContent='＋ Adjuntar evidencia';document.getElementById('evidenceFileInput').value='';}}
+      async function deleteEvidence(id){if(!serverPersistenceAvailable)return;try{await apiJson('/api/evidence?id='+encodeURIComponent(id),{method:'DELETE'});workspaceEvidenceItems=workspaceEvidenceItems.filter(function(item){return item.id!==id;});renderEvidenceList();saveWorkspace(true);toast('Evidencia eliminada');}catch(e){toast('No fue posible eliminar la evidencia');}}
+      function projectInitials(value){return String(value||'DMAIC').split(/\s+/).filter(Boolean).slice(0,2).map(function(part){return part.charAt(0).toUpperCase();}).join('')||'D5';}
+      function renderProjectPortfolio(){var rows=document.getElementById('projectPortfolioRows'),select=document.getElementById('projectSelector');document.getElementById('activeProjectCount').textContent=projectCatalog.filter(function(item){return item.status!=='archived';}).length;document.getElementById('portfolioProjectNote').textContent=projectCatalog.length===1?'1 proyecto disponible':projectCatalog.length+' proyectos disponibles';select.innerHTML=projectCatalog.map(function(project){return '<option value="'+escapeHtml(project.id)+'"'+(project.id===currentProjectId?' selected':'')+'>'+escapeHtml(project.name)+'</option>';}).join('');if(!projectCatalog.length){rows.innerHTML='<div class="portfolio-empty">Crea el primer proyecto para comenzar.</div>';return;}rows.innerHTML=projectCatalog.map(function(project){var progress=project.id===currentProjectId?phaseProgress(project.current_phase||'define'):0,meta=[project.area,project.location].filter(Boolean).join(' · ')||'Sin área asignada',phase=phaseName(project.current_phase||'define');return '<div class="project-row" data-project-id="'+escapeHtml(project.id)+'"><div class="project-name">'+escapeHtml(project.name)+'<small>'+escapeHtml(meta)+'</small></div><div><span class="badge">'+escapeHtml(phase)+'</span></div><div>'+escapeHtml(project.role||'Líder')+'</div><div class="progress-inline"><div class="bar"><span style="width:'+progress+'%"></span></div>'+progress+'%</div><div><span class="badge '+(project.localOnly?'warn':'')+'">'+(project.localOnly?'Local':'Sincronizado')+'</span></div></div>';}).join('');}
+      async function selectProject(projectId,announce){var project=projectCatalog.find(function(item){return item.id===projectId;});if(!project)return;currentProjectId=project.id;localStorage.setItem('dmaicCurrentProjectId',project.id);localStorage.setItem('dmaicProjectName',project.name);document.getElementById('topProjectTitle').textContent=project.name;document.getElementById('heroProjectTitle').textContent=project.name;document.getElementById('heroProjectProblem').textContent=project.problem||'Documenta el problema observable, la línea base y la meta del proyecto.';smartLoadedProject='';charterLoadedProject='';workspaceToolId='sipoc';await loadGanttForProject();await loadSmartForProject();await loadCharterForProject();await loadMeasurementForProject();renderPhaseQuickStarts();renderPhaseLauncher();renderProjectPortfolio();updateAIContext();if(announce)toast('Proyecto cambiado; sus datos se cargaron por separado.');}
+      function createLocalProject(input){var project={id:crypto.randomUUID(),name:input.name,area:input.area||'',location:input.location||'',problem:input.problem||'',primary_metric:input.primary_metric||'',baseline:input.baseline||'',target:input.target||'',deadline:input.deadline||'',current_phase:'define',status:'active',role:'owner',localOnly:true,updated_at:new Date().toISOString()};projectCatalog.unshift(project);saveLocalProjects();return project;}
+      async function bootstrapProjects(){var local=localProjects();try{var session=await apiJson('/api/session');currentUser=session.user;var data=await apiJson('/api/projects');serverPersistenceAvailable=true;projectCatalog=(data.items||[]).concat(local.filter(function(item){return !(data.items||[]).some(function(remote){return remote.id===item.id;});}));}catch(e){serverPersistenceAvailable=false;projectCatalog=local;}
+        if(currentUser){document.getElementById('identityName').textContent=currentUser.name||currentUser.email;document.getElementById('identityAvatar').textContent=projectInitials(currentUser.name||currentUser.email);}if(!projectCatalog.length){var seedName=localStorage.getItem('dmaicProjectName')||'Mi primer proyecto DMAIC',seed={name:seedName,area:'Operaciones',location:'',problem:'Define el problema observable que deseas resolver.',primary_metric:'',baseline:'',target:'',deadline:'',current_phase:'define'};if(serverPersistenceAvailable){try{var created=await apiJson('/api/projects',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(seed)});projectCatalog=[created.item];}catch(e){projectCatalog=[createLocalProject(seed)];}}else projectCatalog=[createLocalProject(seed)];}
+        var selected=localStorage.getItem('dmaicCurrentProjectId');if(!projectCatalog.some(function(item){return item.id===selected;}))selected=projectCatalog[0].id;await selectProject(selected,false);document.querySelector('.mode-pill.sync-note').textContent=serverPersistenceAvailable?'Sincronización activa':'Modo local en Codespaces';}
       var toolCatalog = [
         {id:'charter',phase:'define',icon:'CH',name:'Project Charter',purpose:'Autoriza y alinea el proyecto con problema, objetivo, alcance, roles y beneficio.',when:'Al iniciar Define, antes de comprometer recursos.',inputs:'Problema, línea base, meta, alcance, fechas y equipo.',output:'Acta del proyecto lista para aprobación.',steps:['Redacta el problema con datos y sin proponer solución.','Explica el caso de negocio y el impacto.','Define un objetivo SMART y su indicador.','Delimita qué queda dentro y fuera.','Asigna patrocinador, líder, equipo y fechas.','Revisa y solicita aprobación del gate.'],tip:'Un Charter fuerte permite que dos personas distintas expliquen el mismo proyecto de la misma manera.',ready:true},
         {id:'smart',phase:'define',icon:'SM',name:'Objetivo SMART',purpose:'Convierte la intención del proyecto en un resultado específico, medible, alcanzable, relevante y con fecha.',when:'Al iniciar cada proyecto y antes de aprobar el Project Charter.',inputs:'Resultado esperado, indicador, línea base, meta, viabilidad, beneficio y fecha.',output:'Objetivo evaluado y listo para integrarse al Charter.',steps:['Describe qué resultado cambiará y en qué proceso.','Define indicador, línea base, meta y unidad.','Justifica por qué la meta es alcanzable.','Conecta el resultado con un beneficio relevante.','Asigna una fecha límite y valida los cinco criterios.'],tip:'Redacta el objetivo sin incluir todavía una solución específica; primero define qué debe cambiar.',ready:true},
@@ -439,7 +462,7 @@ const page = String.raw`<!doctype html>
         spc:{title:'Datos para control estadístico',description:'Con una medición por fila se genera I-MR; con 2 o 3 mediciones por subgrupo se genera X̄-R.',fields:[{key:'subgroup',label:'Fecha / subgrupo',required:true,patterns:['fecha','subgrupo','periodo','lote','muestra','tiempo']},{key:'m1',label:'Medición 1',required:true,numeric:true,patterns:['medicion 1','medicion1','valor 1','valor1','resultado']},{key:'m2',label:'Medición 2 (opcional)',numeric:true,patterns:['medicion 2','medicion2','valor 2','valor2']},{key:'m3',label:'Medición 3 (opcional)',numeric:true,patterns:['medicion 3','medicion3','valor 3','valor3']}]}
       };
       var IMPORT_MAX_FILE_BYTES=15*1024*1024,IMPORT_MAX_ROWS=20000,IMPORT_MAX_COLUMNS=50,IMPORT_MAX_CELLS=250000,WORKSPACE_TABLE_PAGE_SIZE=250;
-      var workspaceToolId='sipoc', workspaceRows=[], workspaceNotes='', workspaceStatus='draft', workspaceEvidence=false, workspaceDataset=[], workspaceImportMeta={}, workspaceChartConfig={}, importedTable=null, importedWorkbook=null, spreadsheetLibraryPromise=null, workspaceTablePage=0, savedDeliverableItems=[];
+      var workspaceToolId='sipoc', workspaceRows=[], workspaceNotes='', workspaceStatus='draft', workspaceEvidence=false, workspaceEvidenceItems=[], workspaceDataset=[], workspaceImportMeta={}, workspaceChartConfig={}, importedTable=null, importedWorkbook=null, spreadsheetLibraryPromise=null, workspaceTablePage=0, savedDeliverableItems=[];
       var expertPhaseGuidance={
         define:{meaning:'Este entregable convierte una idea de mejora en un acuerdo claro sobre el problema, los límites, las personas involucradas y el trabajo que se realizará.',insight:'Busca alineación, no perfección. Si distintas personas interpretan de forma diferente el problema, el proceso o el alcance, todavía existe riesgo de retrabajo. Valida este documento con el dueño del proceso y con quienes realizan el trabajo.',next:'Revisa el resultado con el patrocinador y el equipo operativo. Corrige ambigüedades, adjunta la evidencia inicial y obtén su conformidad antes de comenzar la medición.'},
         measure:{meaning:'Este entregable transforma el proceso en datos comparables y confiables. Define qué se mide, con qué criterio y qué desempeño representa la situación actual.',insight:'No avances a Analyze solamente porque ya existen números. Primero confirma que las definiciones sean consistentes, que el sistema de medición sea adecuado y que la muestra represente las condiciones reales del proceso.',next:'Valida los criterios de captura, completa la muestra planeada y revisa calidad, trazabilidad y estabilidad de los datos antes de buscar causas.'},
@@ -447,7 +470,7 @@ const page = String.raw`<!doctype html>
         improve:{meaning:'Este entregable convierte causas validadas en soluciones comparables, pruebas controladas y decisiones de implementación con riesgo administrado.',insight:'Una buena solución debe atacar una causa comprobada y mostrar mejora contra la línea base. Evalúa impacto, esfuerzo, riesgo y sostenibilidad; no elijas solamente la idea más popular o rápida.',next:'Define un piloto con criterio de éxito previo, ejecuta a escala controlada y compara los resultados contra la línea base antes de extender el cambio.'},
         control:{meaning:'Este entregable convierte la mejora en una forma estable de operar, con métricas, responsables y respuestas claras cuando aparece una desviación.',insight:'Control no significa vigilar personas; significa detectar cambios del proceso a tiempo. Cada señal debe tener una acción, un responsable, un plazo y evidencia de cierre.',next:'Transfiere el control al dueño del proceso, prueba el plan de reacción y confirma que el seguimiento pueda continuar sin depender del líder del proyecto.'}
       };
-      var ganttTasks = [
+      var defaultGanttTasks = [
         {name:'Project Charter',person:'AM',start:'19 Ago',end:'21 Ago',status:'done',progress:100,left:2,width:17},
         {name:'Definir el problema',person:'AM',start:'19 Ago',end:'26 Ago',status:'done',progress:100,left:2,width:34},
         {name:'Objetivo SMART',person:'CR',start:'26 Ago',end:'29 Ago',status:'done',progress:100,left:28,width:18},
@@ -456,7 +479,10 @@ const page = String.raw`<!doctype html>
         {name:'Crear SIPOC',person:'RS',start:'9 Sep',end:'13 Sep',status:'pending',progress:0,left:73,width:19},
         {name:'Aprobación de fase',person:'MP',start:'16 Sep',end:'16 Sep',status:'pending',progress:0,left:93,width:3}
       ];
-      try { var savedTasks = JSON.parse(localStorage.getItem('dmaicTasks')); if(Array.isArray(savedTasks) && savedTasks.length){ganttTasks=savedTasks;} } catch(e){}
+      var ganttTasks=defaultGanttTasks.map(function(task){return Object.assign({},task);});
+      function ganttStorageKey(){return projectScopedStorageKey('gantt');}
+      function persistGantt(){var payload={tasks:ganttTasks,updatedAt:new Date().toISOString()};localStorage.setItem(ganttStorageKey(),JSON.stringify(payload));saveProjectRecord('gantt',payload);}
+      async function loadGanttForProject(){var payload=null;try{payload=JSON.parse(localStorage.getItem(ganttStorageKey()));if(!payload){var legacy=JSON.parse(localStorage.getItem('dmaicTasks'));if(Array.isArray(legacy)&&legacy.length){payload={tasks:legacy};localStorage.setItem(ganttStorageKey(),JSON.stringify(payload));}}}catch(e){}var remote=await fetchProjectRecord('gantt');if(remote&&Array.isArray(remote.tasks))payload=remote;ganttTasks=payload&&Array.isArray(payload.tasks)&&payload.tasks.length?payload.tasks:defaultGanttTasks.map(function(task){return Object.assign({},task);});renderGantt();}
       var ganttZoom=localStorage.getItem('dmaicGanttZoom')||'week';if(['month','week','day','hour'].indexOf(ganttZoom)<0)ganttZoom='week';
 
       var phaseContent={
@@ -471,7 +497,7 @@ const page = String.raw`<!doctype html>
       function phaseTools(phase){return toolCatalog.filter(function(tool){return tool.phase===phase;});}
       function openCatalogTool(id){if(id==='charter'||id==='smart'){showView(id);return;}openToolWorkspace(id);}
       function storedToolProgress(tool){
-        var saved=null;try{saved=JSON.parse(localStorage.getItem('dmaicToolWorkspace_'+tool.id));}catch(e){}
+        var saved=null;try{saved=JSON.parse(localStorage.getItem(projectScopedStorageKey('tool_'+tool.id)));}catch(e){}
         var rows=saved&&Array.isArray(saved.rows)?saved.rows:toolTemplates[tool.id]&&toolTemplates[tool.id].rows||[],columns=toolTemplates[tool.id]&&toolTemplates[tool.id].columns||[];
         if(!rows.length||!columns.length)return 0;var filled=0,total=rows.length*columns.length;rows.forEach(function(row){columns.forEach(function(_,index){if(String(row[index]||'').trim())filled++;});});return Math.round(filled/total*100);
       }
@@ -597,7 +623,7 @@ const page = String.raw`<!doctype html>
         return '<input'+common+' type="'+(dated?'date':numeric?'number':'text')+'"'+(numeric?' step="any"':'')+limits+(computed?' readonly aria-readonly="true" title="Cálculo automático"':'')+' value="'+escapeHtml(value||'')+'">';
       }
       function saveWorkspace(silent){
-        var datasetToStore=workspaceToolId==='capability'?workspaceDataset:[];try{localStorage.setItem('dmaicToolWorkspace_'+workspaceToolId,JSON.stringify({rows:workspaceRows,notes:workspaceNotes,status:workspaceStatus,evidence:workspaceEvidence,dataset:datasetToStore,importMeta:workspaceImportMeta,chartConfig:workspaceChartConfig}));if(!silent)toast('Borrador de la herramienta guardado en este dispositivo');}catch(error){document.getElementById('workspaceAutosave').textContent='Datos grandes en memoria · guarda una versión';if(!silent)toast('El navegador no tiene espacio local suficiente; guarda una versión en el proyecto.');}
+        var datasetToStore=workspaceDataset,payload={rows:workspaceRows,notes:workspaceNotes,status:workspaceStatus,evidence:workspaceEvidence,dataset:datasetToStore,importMeta:workspaceImportMeta,chartConfig:workspaceChartConfig,updatedAt:new Date().toISOString()};try{localStorage.setItem(projectScopedStorageKey('tool_'+workspaceToolId),JSON.stringify(payload));saveProjectRecord('tool:'+workspaceToolId,payload);if(!silent)toast(serverPersistenceAvailable?'Borrador sincronizado con el proyecto':'Borrador guardado localmente');}catch(error){document.getElementById('workspaceAutosave').textContent='Datos grandes en memoria · guarda una versión';if(!silent)toast('El navegador no tiene espacio local suficiente; guarda una versión en el proyecto.');}
       }
       function workspaceProgress(){
         var total=workspaceRows.length*(toolTemplates[workspaceToolId]||{columns:[]}).columns.length;
@@ -719,7 +745,7 @@ const page = String.raw`<!doctype html>
         if(id==='smart'){showView('smart');return;}
         var tool=toolCatalog.find(function(item){return item.id===id;});var spec=toolTemplates[id];if(!tool||!spec)return;
         workspaceToolId=id;workspaceRows=spec.rows.map(function(row){return row.slice();});workspaceNotes='';workspaceStatus='draft';workspaceEvidence=false;workspaceDataset=[];workspaceImportMeta={};workspaceChartConfig=chartConfigDefaults(id);workspaceTablePage=0;
-        try{var saved=JSON.parse(localStorage.getItem('dmaicToolWorkspace_'+id));if(saved&&Array.isArray(saved.rows)){workspaceRows=saved.rows;workspaceNotes=saved.notes||'';workspaceStatus=saved.status||'draft';workspaceEvidence=!!saved.evidence;workspaceDataset=Array.isArray(saved.dataset)?saved.dataset:[];workspaceImportMeta=saved.importMeta||{};workspaceChartConfig=saved.chartConfig||workspaceChartConfig;}}catch(e){}
+        try{var storageKey=projectScopedStorageKey('tool_'+id),saved=JSON.parse(localStorage.getItem(storageKey));if(!saved){var legacy=JSON.parse(localStorage.getItem('dmaicToolWorkspace_'+id));if(legacy){saved=legacy;localStorage.setItem(storageKey,JSON.stringify(legacy));}}if(saved&&Array.isArray(saved.rows)){workspaceRows=saved.rows;workspaceNotes=saved.notes||'';workspaceStatus=saved.status||'draft';workspaceEvidence=!!saved.evidence;workspaceDataset=Array.isArray(saved.dataset)?saved.dataset:[];workspaceImportMeta=saved.importMeta||{};workspaceChartConfig=saved.chartConfig||workspaceChartConfig;}}catch(e){}
         if(!workspaceRows.length)workspaceRows=[blankWorkspaceRow()];
         workspaceRows=workspaceRows.map(function(row){return spec.columns.map(function(column,i){return row[i]||'';});});
         document.getElementById('workspacePhase').textContent=phaseName(tool.phase)+' · Herramienta editable';document.getElementById('workspaceTitle').textContent=tool.name;document.getElementById('workspacePurpose').textContent=tool.purpose;
@@ -728,9 +754,9 @@ const page = String.raw`<!doctype html>
         document.getElementById('workspaceGuideTitle').textContent='Cómo completar '+tool.name;document.getElementById('workspaceGuideCopy').textContent=spec.prompt;
         document.getElementById('workspaceRequirements').innerHTML=tool.steps.slice(0,4).map(function(step){return '<li>'+escapeHtml(step)+'</li>';}).join('');
         document.getElementById('evidenceStatus').textContent=workspaceEvidence?'1 evidencia vinculada':'Sin archivos adjuntos';
-        renderWorkspaceTable();configureStatisticalImporter();showView('tool-workspace');setWorkspaceMode(false);
+        renderWorkspaceTable();configureStatisticalImporter();showView('tool-workspace');setWorkspaceMode(false);loadEvidenceItems();fetchProjectRecord('tool:'+id).then(function(saved){if(workspaceToolId!==id||!saved||!Array.isArray(saved.rows))return;workspaceRows=saved.rows;workspaceNotes=saved.notes||'';workspaceStatus=saved.status||'draft';workspaceDataset=Array.isArray(saved.dataset)?saved.dataset:[];workspaceImportMeta=saved.importMeta||{};workspaceChartConfig=saved.chartConfig||workspaceChartConfig;document.getElementById('workspaceNotes').value=workspaceNotes;renderWorkspaceTable();configureChartSettings();});
       }
-      function currentProjectStorageId(){return (document.getElementById('topProjectTitle').textContent||'proyecto').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')||'proyecto';}
+      function currentProjectStorageId(){if(currentProjectId)return currentProjectId;var legacy=localStorage.getItem('dmaicFallbackProjectId');if(!legacy){legacy=crypto.randomUUID();localStorage.setItem('dmaicFallbackProjectId',legacy);}return legacy;}
       function smartStorageKey(){return 'dmaicSmart_'+currentProjectStorageId();}
       function charterStorageKey(){return 'dmaicCharter_'+currentProjectStorageId();}
       function smartValue(id){return document.getElementById(id).value.trim();}
@@ -750,12 +776,13 @@ const page = String.raw`<!doctype html>
         document.getElementById('smartRecommendation').innerHTML=missing.length?'<b>Para fortalecerlo:</b> completa '+missing.map(function(key){return names[key];}).join(', ')+'.':'<b>Objetivo completo:</b> ahora valida la meta con el dueño del proceso y confirma que no incluya una solución anticipada.';
         return score;
       }
-      function loadSmartForProject(){
+      async function loadSmartForProject(){
         var project=currentProjectStorageId();if(smartLoadedProject===project){updateSmart();return;}smartLoadedProject=project;
         var data=smartDefaults;try{var saved=JSON.parse(localStorage.getItem(smartStorageKey()));if(saved)data=saved;}catch(e){}
+        var remote=await fetchProjectRecord('smart');if(remote)data=remote;
         smartIds.forEach(function(id){document.getElementById(id).value=data[id]!=null?data[id]:smartDefaults[id];});document.getElementById('smartProjectName').textContent=document.getElementById('topProjectTitle').textContent;updateSmart();
       }
-      function saveSmartForProject(){var data={};smartIds.forEach(function(id){data[id]=document.getElementById(id).value;});data.statement=smartStatementText();data.score=updateSmart();localStorage.setItem(smartStorageKey(),JSON.stringify(data));return data;}
+      function saveSmartForProject(){var data={};smartIds.forEach(function(id){data[id]=document.getElementById(id).value;});data.statement=smartStatementText();data.score=updateSmart();data.updatedAt=new Date().toISOString();localStorage.setItem(smartStorageKey(),JSON.stringify(data));saveProjectRecord('smart',data);return data;}
       renderTools();
 
       function showView(id){
@@ -770,7 +797,8 @@ const page = String.raw`<!doctype html>
         updateAIContext();
         window.scrollTo({top:0,behavior:'smooth'});
       }
-      document.addEventListener('click',function(e){var viewBtn=e.target.closest('[data-view]');if(viewBtn){showView(viewBtn.dataset.view);}var phaseLaunch=e.target.closest('[data-phase-launch]');if(phaseLaunch){activeHomePhase=phaseLaunch.dataset.phaseLaunch;renderPhaseLauncher();}var open=e.target.closest('[data-open]');if(open){openModal(open.dataset.open);}var tool=e.target.closest('[data-tool]');if(tool){openToolGuide(tool.dataset.tool);}var quickTool=e.target.closest('[data-quick-tool]');if(quickTool&&quickTool.dataset.quickTool){openCatalogTool(quickTool.dataset.quickTool);}var develop=e.target.closest('[data-develop]');if(develop&&develop.dataset.develop){openCatalogTool(develop.dataset.develop);}var remove=e.target.closest('[data-delete-row]');if(remove){if(workspaceRows.length===1){toast('La plantilla debe conservar al menos una fila');}else{workspaceRows.splice(Number(remove.dataset.deleteRow),1);workspaceStatus='draft';renderWorkspaceTable();scheduleWorkspaceSave();}}var pageButton=e.target.closest('[data-table-page]');if(pageButton&&!pageButton.disabled){workspaceTablePage+=pageButton.dataset.tablePage==='next'?1:-1;renderWorkspaceTable();document.querySelector('.template-scroll').scrollTop=0;}var filter=e.target.closest('[data-tool-filter]');if(filter){activeToolFilter=filter.dataset.toolFilter;document.querySelectorAll('[data-tool-filter]').forEach(function(b){b.classList.toggle('active',b===filter);});renderTools();}var aiQuestion=e.target.closest('[data-ai-question]');if(aiQuestion){openAIAssistant(aiQuestion.dataset.aiQuestion);}if(e.target.closest('[data-close]'))closeModals();});
+      document.addEventListener('click',function(e){var projectRow=e.target.closest('[data-project-id]');if(projectRow){selectProject(projectRow.dataset.projectId,true);}var viewBtn=e.target.closest('[data-view]');if(viewBtn){showView(viewBtn.dataset.view);}var phaseLaunch=e.target.closest('[data-phase-launch]');if(phaseLaunch){activeHomePhase=phaseLaunch.dataset.phaseLaunch;renderPhaseLauncher();}var open=e.target.closest('[data-open]');if(open){openModal(open.dataset.open);}var tool=e.target.closest('[data-tool]');if(tool){openToolGuide(tool.dataset.tool);}var quickTool=e.target.closest('[data-quick-tool]');if(quickTool&&quickTool.dataset.quickTool){openCatalogTool(quickTool.dataset.quickTool);}var develop=e.target.closest('[data-develop]');if(develop&&develop.dataset.develop){openCatalogTool(develop.dataset.develop);}var remove=e.target.closest('[data-delete-row]');if(remove){if(workspaceRows.length===1){toast('La plantilla debe conservar al menos una fila');}else{workspaceRows.splice(Number(remove.dataset.deleteRow),1);workspaceStatus='draft';renderWorkspaceTable();scheduleWorkspaceSave();}}var pageButton=e.target.closest('[data-table-page]');if(pageButton&&!pageButton.disabled){workspaceTablePage+=pageButton.dataset.tablePage==='next'?1:-1;renderWorkspaceTable();document.querySelector('.template-scroll').scrollTop=0;}var filter=e.target.closest('[data-tool-filter]');if(filter){activeToolFilter=filter.dataset.toolFilter;document.querySelectorAll('[data-tool-filter]').forEach(function(b){b.classList.toggle('active',b===filter);});renderTools();}var aiQuestion=e.target.closest('[data-ai-question]');if(aiQuestion){openAIAssistant(aiQuestion.dataset.aiQuestion);}if(e.target.closest('[data-close]'))closeModals();});
+      document.getElementById('projectSelector').addEventListener('change',function(){selectProject(this.value,true);});
 
       function ganttDate(value){var raw=String(value||''),direct=/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}/.test(raw)?new Date(raw):/^\d{4}-\d{2}-\d{2}$/.test(raw)?new Date(raw+'T08:00:00'):null;if(direct&&!isNaN(direct))return direct;var match=raw.match(/(\d{1,2})\s+([A-Za-zÁÉÍÓÚáéíóú]{3,})/),months={ene:0,feb:1,mar:2,abr:3,may:4,jun:5,jul:6,ago:7,sep:8,oct:9,nov:10,dic:11};if(!match)return null;var month=months[match[2].slice(0,3).toLowerCase()];return month==null?null:new Date(2026,month,Number(match[1]),8);}
       function ganttDateOnly(value){var date=value instanceof Date?value:ganttDate(value);return date?date.getFullYear()+'-'+String(date.getMonth()+1).padStart(2,'0')+'-'+String(date.getDate()).padStart(2,'0'):'';}
@@ -791,11 +819,11 @@ const page = String.raw`<!doctype html>
           row.innerHTML='<div class="task-cell"><button class="status-toggle '+t.status+'" data-task="'+i+'" aria-label="Cambiar estado de '+escapeHtml(t.name)+'">'+ganttProgressIcon(progress)+'</button><input class="gantt-edit" data-gantt-index="'+i+'" data-gantt-field="name" value="'+escapeHtml(t.name)+'" aria-label="Actividad"></div><div class="gantt-field"><input class="gantt-edit" data-gantt-index="'+i+'" data-gantt-field="person" value="'+escapeHtml(t.person)+'" aria-label="Responsable"></div><div class="gantt-field"><input class="gantt-edit" type="'+inputType+'" data-gantt-index="'+i+'" data-gantt-field="start" value="'+startValue+'" aria-label="Inicio"></div><div class="gantt-field"><input class="gantt-edit" type="'+inputType+'" data-gantt-index="'+i+'" data-gantt-field="end" value="'+endValue+'" aria-label="Fin"></div><div class="gantt-progress-cell"><span class="progress-icon '+t.status+'">'+ganttProgressIcon(progress)+'</span><input class="gantt-progress-input" type="number" min="0" max="100" step="1" data-gantt-index="'+i+'" data-gantt-field="progress" value="'+progress+'" aria-label="Porcentaje de avance de '+escapeHtml(t.name)+'"></div><div class="timeline" style="--gantt-unit-width:'+scale.unitWidth+'px"><div class="today-line" style="'+todayStyle+'"><span>Hoy</span></div><div class="taskbar" style="margin-left:'+position.left+'%;width:'+position.width+'%"><span class="taskbar-fill '+t.status+'" style="width:'+progress+'%"></span><span class="taskbar-label'+(progress===0?' empty':'')+'">'+progress+'%</span></div></div>';
           root.appendChild(row);
         });
-        root.querySelectorAll('[data-task]').forEach(function(btn){btn.addEventListener('click',function(){cycleTask(Number(btn.dataset.task));});});root.querySelectorAll('[data-gantt-field]').forEach(function(input){input.addEventListener('change',function(){var task=ganttTasks[Number(input.dataset.ganttIndex)],field=input.dataset.ganttField;if(!task)return;if(field==='progress'){task.progress=Math.max(0,Math.min(100,Number(input.value)||0));task.status=ganttStatus(task.progress);}else task[field]=input.value.trim()||task[field];localStorage.setItem('dmaicTasks',JSON.stringify(ganttTasks));if(field==='start'||field==='end'||field==='progress')renderGantt();toast(field==='progress'?'Avance actualizado a '+task.progress+'%':'Entregable actualizado en el Gantt');});});
+        root.querySelectorAll('[data-task]').forEach(function(btn){btn.addEventListener('click',function(){cycleTask(Number(btn.dataset.task));});});root.querySelectorAll('[data-gantt-field]').forEach(function(input){input.addEventListener('change',function(){var task=ganttTasks[Number(input.dataset.ganttIndex)],field=input.dataset.ganttField;if(!task)return;if(field==='progress'){task.progress=Math.max(0,Math.min(100,Number(input.value)||0));task.status=ganttStatus(task.progress);}else task[field]=input.value.trim()||task[field];persistGantt();if(field==='start'||field==='end'||field==='progress')renderGantt();toast(field==='progress'?'Avance actualizado a '+task.progress+'%':'Entregable actualizado en el Gantt');});});
       }
       function renderGantt(){var levels=['month','week','day','hour'],levelIndex=levels.indexOf(ganttZoom);document.querySelectorAll('.gantt-zoom').forEach(function(select){select.value=ganttZoom;});document.querySelectorAll('[data-gantt-zoom-step]').forEach(function(button){var step=Number(button.dataset.ganttZoomStep);button.disabled=(step<0&&levelIndex===0)||(step>0&&levelIndex===levels.length-1);});renderGanttRoot(document.getElementById('gantt'));renderGanttRoot(document.getElementById('dashboardGantt'));updateDefineSummary();}
       function setGanttZoom(nextZoom){var levels=['month','week','day','hour'];if(levels.indexOf(nextZoom)<0||nextZoom===ganttZoom)return;ganttZoom=nextZoom;localStorage.setItem('dmaicGanttZoom',ganttZoom);renderGantt();toast('Escala del Gantt: '+({month:'mes',week:'semana',day:'día',hour:'hora'}[ganttZoom]||ganttZoom));}
-      function cycleTask(i){var order=['pending','progress','review','done'];var values={pending:0,progress:50,review:90,done:100};var t=ganttTasks[i];t.status=order[(order.indexOf(t.status)+1)%order.length];t.progress=values[t.status];localStorage.setItem('dmaicTasks',JSON.stringify(ganttTasks));renderGantt();toast('Actividad actualizada y avance recalculado');}
+      function cycleTask(i){var order=['pending','progress','review','done'];var values={pending:0,progress:50,review:90,done:100};var t=ganttTasks[i];t.status=order[(order.indexOf(t.status)+1)%order.length];t.progress=values[t.status];persistGantt();renderGantt();toast('Actividad actualizada y avance recalculado');}
       function updateDefineSummary(){var total=ganttTasks.reduce(function(a,t){return a+t.progress;},0);var pct=ganttTasks.length?Math.round(total/ganttTasks.length):0;var done=ganttTasks.filter(function(t){return t.status==='done';}).length;['definePct','defineRingText'].forEach(function(id){document.getElementById(id).textContent=pct+'%';});document.getElementById('defineDone').textContent=done+'/'+ganttTasks.length;document.getElementById('defineRing').style.setProperty('--p',pct);}
       renderPhaseLauncher();renderPhaseQuickStarts();renderGantt();document.querySelectorAll('.gantt-zoom').forEach(function(select){select.addEventListener('change',function(){setGanttZoom(select.value);});});document.querySelectorAll('[data-gantt-zoom-step]').forEach(function(button){button.addEventListener('click',function(){var levels=['month','week','day','hour'],nextIndex=Math.max(0,Math.min(levels.length-1,levels.indexOf(ganttZoom)+Number(button.dataset.ganttZoomStep)));setGanttZoom(levels[nextIndex]);});});
 
@@ -824,16 +852,16 @@ const page = String.raw`<!doctype html>
       function closeModals(){document.querySelectorAll('.modal-backdrop').forEach(function(x){x.classList.remove('open');});}
       function updateProjectSteps(){document.querySelectorAll('#projectModal .form-step').forEach(function(s,i){s.classList.toggle('active',i===projectStep);});document.querySelectorAll('#projectModal .stepper span').forEach(function(s,i){s.classList.toggle('active',i<=projectStep);});document.getElementById('projectBack').style.visibility=projectStep===0?'hidden':'visible';document.getElementById('projectNext').textContent=projectStep===2?'Crear proyecto':'Continuar →';}
       document.getElementById('projectBack').addEventListener('click',function(){if(projectStep>0)projectStep--;updateProjectSteps();});
-      document.getElementById('projectNext').addEventListener('click',function(){if(projectStep<2){projectStep++;updateProjectSteps();return;}var name=document.getElementById('newProjectName').value.trim()||'Nuevo proyecto DMAIC';document.getElementById('topProjectTitle').textContent=name;document.getElementById('heroProjectTitle').textContent=name;localStorage.setItem('dmaicProjectName',name);
-        var smartSeed={smartSpecific:name,smartMetric:document.getElementById('newProjectMetric').value,smartUnit:'',smartBaseline:document.getElementById('newProjectBaseline').value,smartTarget:document.getElementById('newProjectTarget').value,smartAchievable:'',smartRelevant:'',smartDeadline:document.getElementById('newProjectDeadline').value};localStorage.setItem(smartStorageKey(),JSON.stringify(smartSeed));
-        var charterSeed={};charterIds.forEach(function(id){charterSeed[id]=charterDefaults[id];});charterSeed.charterProject=name;charterSeed.charterProblem=document.getElementById('newProblem').value;charterSeed.charterMetric=smartSeed.smartMetric;charterSeed.charterBaseline=smartSeed.smartBaseline;charterSeed.charterTarget=smartSeed.smartTarget;charterSeed.charterEnd=smartSeed.smartDeadline;localStorage.setItem(charterStorageKey(),JSON.stringify(charterSeed));smartLoadedProject='';charterLoadedProject='';loadSmartForProject();loadCharterForProject();
-        closeModals();showView('define');toast('Proyecto creado con constructor SMART y plan DMAIC');});
-      var savedProject=localStorage.getItem('dmaicProjectName');if(savedProject){document.getElementById('topProjectTitle').textContent=savedProject;document.getElementById('heroProjectTitle').textContent=savedProject;}loadSmartForProject();
+      document.getElementById('projectNext').addEventListener('click',async function(){if(projectStep<2){projectStep++;updateProjectSteps();return;}var button=document.getElementById('projectNext'),name=document.getElementById('newProjectName').value.trim()||'Nuevo proyecto DMAIC',locationInput=document.querySelector('#projectModal .form-step[data-step="0"] .form-field:last-child input'),input={name:name,area:document.getElementById('newProjectArea').value,location:locationInput?locationInput.value:'',problem:document.getElementById('newProblem').value,primary_metric:document.getElementById('newProjectMetric').value,baseline:document.getElementById('newProjectBaseline').value,target:document.getElementById('newProjectTarget').value,deadline:document.getElementById('newProjectDeadline').value,current_phase:'define'};button.disabled=true;button.textContent='Creando…';
+        var smartSeed={smartSpecific:name,smartMetric:input.primary_metric,smartUnit:'',smartBaseline:input.baseline,smartTarget:input.target,smartAchievable:'',smartRelevant:'',smartDeadline:input.deadline},charterSeed={};charterIds.forEach(function(id){charterSeed[id]=charterDefaults[id];});charterSeed.charterProject=name;charterSeed.charterProblem=input.problem;charterSeed.charterMetric=input.primary_metric;charterSeed.charterBaseline=input.baseline;charterSeed.charterTarget=input.target;charterSeed.charterEnd=input.deadline;var ganttSeed={tasks:defaultGanttTasks.map(function(task){return Object.assign({},task);})},project=null;
+        if(serverPersistenceAvailable){try{var created=await apiJson('/api/projects',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(Object.assign({},input,{initial_records:{smart:smartSeed,charter:charterSeed,gantt:ganttSeed}}))});project=created.item;projectCatalog.unshift(project);}catch(e){project=createLocalProject(input);}}else project=createLocalProject(input);
+        localStorage.setItem('dmaicSmart_'+project.id,JSON.stringify(smartSeed));localStorage.setItem('dmaicCharter_'+project.id,JSON.stringify(charterSeed));localStorage.setItem(projectScopedStorageKey('gantt',project.id),JSON.stringify(ganttSeed));await selectProject(project.id,false);button.disabled=false;button.textContent='Crear proyecto';closeModals();showView('define');toast(project.localOnly?'Proyecto creado en modo local':'Proyecto creado y sincronizado');});
 
-      document.getElementById('saveMeasurement').addEventListener('click',function(){var value=parseFloat(document.getElementById('measurementValue').value);if(!isFinite(value)||value<=0){toast('Escribe una medición válida');return;}document.getElementById('cycleValue').textContent=value.toFixed(1);var y=Math.max(35,Math.min(195,215-(value-12)*12));var pts='65,72 175,112 285,94 395,140 505,135 615,'+y;document.getElementById('cycleLine').setAttribute('points',pts);document.getElementById('areaPath').setAttribute('d','M65 72 L175 112 L285 94 L395 140 L505 135 L615 '+y+' L615 215 L65 215 Z');document.getElementById('lastPoint').setAttribute('cy',y);document.getElementById('lastLabel').setAttribute('y',y-15);document.getElementById('lastLabel').textContent=value.toFixed(1);localStorage.setItem('dmaicLastMeasurement',value.toFixed(1));closeModals();toast('Medición guardada; indicadores y gráfica actualizados');});
-      var savedMeasure=parseFloat(localStorage.getItem('dmaicLastMeasurement'));if(isFinite(savedMeasure)){document.getElementById('measurementValue').value=savedMeasure;setTimeout(function(){document.getElementById('saveMeasurement').click();closeModals();},0);}
+      function applyMeasurementValue(value){document.getElementById('measurementValue').value=Number(value).toFixed(1);document.getElementById('cycleValue').textContent=Number(value).toFixed(1);var y=Math.max(35,Math.min(195,215-(Number(value)-12)*12)),pts='65,72 175,112 285,94 395,140 505,135 615,'+y;document.getElementById('cycleLine').setAttribute('points',pts);document.getElementById('areaPath').setAttribute('d','M65 72 L175 112 L285 94 L395 140 L505 135 L615 '+y+' L615 215 L65 215 Z');document.getElementById('lastPoint').setAttribute('cy',y);document.getElementById('lastLabel').setAttribute('y',y-15);document.getElementById('lastLabel').textContent=Number(value).toFixed(1);}
+      async function loadMeasurementForProject(){var saved=parseFloat(localStorage.getItem(projectScopedStorageKey('lastMeasurement'))),remote=await fetchProjectRecord('measurements');if(remote&&isFinite(Number(remote.lastValue)))saved=Number(remote.lastValue);if(isFinite(saved))applyMeasurementValue(saved);}
+      document.getElementById('saveMeasurement').addEventListener('click',function(){var value=parseFloat(document.getElementById('measurementValue').value);if(!isFinite(value)||value<=0){toast('Escribe una medición válida');return;}applyMeasurementValue(value);localStorage.setItem(projectScopedStorageKey('lastMeasurement'),value.toFixed(1));saveProjectRecord('measurements',{lastValue:value,updatedAt:new Date().toISOString()});closeModals();toast('Medición guardada; indicadores y gráfica actualizados');});
       document.getElementById('importData').addEventListener('click',function(){openToolWorkspace('baseline');toast('Abre el Centro de datos para pegar Excel, cargar CSV o capturar manualmente.');});
-      function addGanttTask(){ganttTasks.push({name:'Nuevo entregable',person:'AM',start:'16 Sep',end:'18 Sep',status:'pending',progress:0,left:90,width:7});localStorage.setItem('dmaicTasks',JSON.stringify(ganttTasks));renderGantt();toast('Entregable agregado; edita su nombre, responsable y fechas');}
+      function addGanttTask(){ganttTasks.push({name:'Nuevo entregable',person:'AM',start:'16 Sep',end:'18 Sep',status:'pending',progress:0,left:90,width:7});persistGantt();renderGantt();toast('Entregable agregado; edita su nombre, responsable y fechas');}
       document.getElementById('addTask').addEventListener('click',addGanttTask);document.getElementById('dashboardAddTask').addEventListener('click',addGanttTask);
       document.getElementById('openPhaseLibrary').addEventListener('click',function(){activeToolFilter=activePhaseWorkspace;document.querySelectorAll('[data-tool-filter]').forEach(function(button){button.classList.toggle('active',button.dataset.toolFilter===activeToolFilter);});renderTools();showView('tools');});
       document.getElementById('aiLauncher').addEventListener('click',function(){if(document.getElementById('aiPanel').classList.contains('open'))closeAIAssistant();else openAIAssistant();});document.getElementById('aiClose').addEventListener('click',closeAIAssistant);document.getElementById('aiForm').addEventListener('submit',function(event){event.preventDefault();var input=document.getElementById('aiQuestion'),question=input.value.trim();if(!question)return;addAIMessage('user',question);input.value='';askDMAICAssistant(question);});
@@ -865,13 +893,15 @@ const page = String.raw`<!doctype html>
       document.getElementById('saveToolDraft').addEventListener('click',function(){workspaceNotes=document.getElementById('workspaceNotes').value;saveWorkspace(false);});
       document.getElementById('reviewTool').addEventListener('click',function(){workspaceNotes=document.getElementById('workspaceNotes').value;var pct=workspaceProgress();if(pct<70){toast('Completa al menos 70% de la plantilla antes de enviarla a revisión');return;}workspaceStatus='review';saveWorkspace(true);workspaceProgress();toast('Herramienta marcada como lista para revisión');});
       document.getElementById('workspaceNotes').addEventListener('input',function(e){workspaceNotes=e.target.value;workspaceStatus='draft';workspaceProgress();scheduleWorkspaceSave();});
-      document.getElementById('attachEvidence').addEventListener('click',function(){workspaceEvidence=true;document.getElementById('evidenceStatus').textContent='1 evidencia vinculada';saveWorkspace(true);toast('Evidencia de ejemplo vinculada a la herramienta');});
+      document.getElementById('attachEvidence').addEventListener('click',function(){if(!serverPersistenceAvailable){toast('La carga de archivos funciona en la versión publicada.');return;}document.getElementById('evidenceFileInput').click();});
+      document.getElementById('evidenceFileInput').addEventListener('change',function(){uploadEvidence(this.files&&this.files[0]);});
+      document.getElementById('evidenceList').addEventListener('click',function(event){var button=event.target.closest('[data-evidence-delete]');if(button)deleteEvidence(button.dataset.evidenceDelete);});
       var smartAutosaveTimer;document.querySelectorAll('.smart-input').forEach(function(input){input.addEventListener('input',function(){updateSmart();clearTimeout(smartAutosaveTimer);smartAutosaveTimer=setTimeout(function(){saveSmartForProject();},550);});});
       document.getElementById('saveSmart').addEventListener('click',function(){saveSmartForProject();toast('Objetivo SMART guardado para este proyecto');});
       document.getElementById('applySmartToCharter').addEventListener('click',function(){
         var data=saveSmartForProject();if(data.score<100){toast('Completa los cinco criterios antes de aplicarlo al Charter');return;}
         document.getElementById('charterProject').value=document.getElementById('topProjectTitle').textContent;document.getElementById('charterGoal').value=data.statement;document.getElementById('charterMetric').value=smartValue('smartMetric');document.getElementById('charterBaseline').value=smartValue('smartBaseline')+(smartValue('smartUnit')?' '+smartValue('smartUnit'):'');document.getElementById('charterTarget').value=smartValue('smartTarget')+(smartValue('smartUnit')?' '+smartValue('smartUnit'):'');document.getElementById('charterEnd').value=smartValue('smartDeadline');updateCharter();
-        var charterData={};charterIds.forEach(function(id){charterData[id]=document.getElementById(id).value;});localStorage.setItem(charterStorageKey(),JSON.stringify(charterData));charterLoadedProject=currentProjectStorageId();toast('Objetivo aplicado al Charter del proyecto');setTimeout(function(){showView('charter');},500);
+        saveCharterRecord();charterLoadedProject=currentProjectStorageId();toast('Objetivo aplicado al Charter del proyecto');setTimeout(function(){showView('charter');},500);
       });
 
       var charterIds=['charterProject','charterProblem','charterBusiness','charterGoal','charterMetric','charterBaseline','charterTarget','charterScopeIn','charterScopeOut','charterSponsor','charterLeader','charterStart','charterEnd'];
@@ -894,49 +924,153 @@ const page = String.raw`<!doctype html>
         setPreview('previewMetric',[charterValue('charterMetric'),charterValue('charterBaseline')?'Línea base: '+charterValue('charterBaseline'):'',charterValue('charterTarget')?'Meta: '+charterValue('charterTarget'):''].filter(Boolean).join(' · '));
         setPreview('previewRoles',[charterValue('charterSponsor')?'Patrocinador: '+charterValue('charterSponsor'):'',charterValue('charterLeader')?'Líder: '+charterValue('charterLeader'):'',charterValue('charterEnd')?'Objetivo: '+charterValue('charterEnd'):''].filter(Boolean).join(' · '));
       }
-      var charterAutosaveTimer;document.querySelectorAll('.charter-input').forEach(function(input){input.addEventListener('input',function(){updateCharter();clearTimeout(charterAutosaveTimer);charterAutosaveTimer=setTimeout(function(){var data={};charterIds.forEach(function(id){data[id]=document.getElementById(id).value;});localStorage.setItem(charterStorageKey(),JSON.stringify(data));},550);});});
-      function loadCharterForProject(){var project=currentProjectStorageId();if(charterLoadedProject===project){updateCharter();return;}charterLoadedProject=project;charterIds.forEach(function(id){document.getElementById(id).value=charterDefaults[id];});try{var savedCharter=JSON.parse(localStorage.getItem(charterStorageKey()));if(savedCharter){charterIds.forEach(function(id){if(savedCharter[id]!=null)document.getElementById(id).value=savedCharter[id];});}}catch(e){}updateCharter();}
+      function saveCharterRecord(status){var data={};charterIds.forEach(function(id){data[id]=document.getElementById(id).value;});if(status)data.status=status;data.updatedAt=new Date().toISOString();localStorage.setItem(charterStorageKey(),JSON.stringify(data));saveProjectRecord('charter',data);return data;}
+      var charterAutosaveTimer;document.querySelectorAll('.charter-input').forEach(function(input){input.addEventListener('input',function(){updateCharter();clearTimeout(charterAutosaveTimer);charterAutosaveTimer=setTimeout(function(){saveCharterRecord();},550);});});
+      async function loadCharterForProject(){var project=currentProjectStorageId();if(charterLoadedProject===project){updateCharter();return;}charterLoadedProject=project;charterIds.forEach(function(id){document.getElementById(id).value=charterDefaults[id];});var savedCharter=null;try{savedCharter=JSON.parse(localStorage.getItem(charterStorageKey()));}catch(e){}var remote=await fetchProjectRecord('charter');if(remote)savedCharter=remote;if(savedCharter){charterIds.forEach(function(id){if(savedCharter[id]!=null)document.getElementById(id).value=savedCharter[id];});}updateCharter();}
       try{if(!localStorage.getItem(charterStorageKey())&&localStorage.getItem('dmaicCharter'))localStorage.setItem(charterStorageKey(),localStorage.getItem('dmaicCharter'));}catch(e){}
-      loadCharterForProject();
-      document.getElementById('saveCharter').addEventListener('click',function(){var data={};charterIds.forEach(function(id){data[id]=document.getElementById(id).value;});localStorage.setItem(charterStorageKey(),JSON.stringify(data));toast('Charter guardado para este proyecto en este dispositivo');});
-      document.getElementById('reviewCharter').addEventListener('click',function(){if(lastCharterScore<80){toast('Completa los puntos de calidad antes de solicitar revisión');return;}var data={};charterIds.forEach(function(id){data[id]=document.getElementById(id).value;});data.status='review';localStorage.setItem(charterStorageKey(),JSON.stringify(data));toast('Charter marcado listo para revisión del patrocinador');});
+      document.getElementById('saveCharter').addEventListener('click',function(){saveCharterRecord();toast(serverPersistenceAvailable?'Charter sincronizado con el proyecto':'Charter guardado localmente');});
+      document.getElementById('reviewCharter').addEventListener('click',function(){if(lastCharterScore<80){toast('Completa los puntos de calidad antes de solicitar revisión');return;}saveCharterRecord('review');toast('Charter marcado listo para revisión del patrocinador');});
       document.getElementById('clearCharter').addEventListener('click',function(){charterIds.forEach(function(id){document.getElementById(id).value=charterDefaults[id];});document.getElementById('charterProject').value=document.getElementById('topProjectTitle').textContent;updateCharter();toast('Ejemplo restaurado para este proyecto');});
       function toast(message){var t=document.getElementById('toast');t.textContent=message;t.classList.add('show');clearTimeout(window.toastTimer);window.toastTimer=setTimeout(function(){t.classList.remove('show');},2600);}
       document.querySelectorAll('.modal-backdrop').forEach(function(m){m.addEventListener('click',function(e){if(e.target===m)closeModals();});});document.addEventListener('keydown',function(e){if(e.key==='Escape')closeModals();});
+      bootstrapProjects();
     </script>
   </body>
 </html>`;
-
-async function ensureDatabase(env) {
-  if (!env.DB) throw new Error("La base de datos del proyecto no está conectada.");
-  await env.DB.batch([
-    env.DB.prepare(`CREATE TABLE IF NOT EXISTS tool_deliverables (
-      id TEXT PRIMARY KEY,
-      project_key TEXT NOT NULL,
-      project_name TEXT NOT NULL,
-      tool_id TEXT NOT NULL,
-      tool_name TEXT NOT NULL,
-      version INTEGER NOT NULL,
-      completion INTEGER NOT NULL DEFAULT 0,
-      payload_json TEXT NOT NULL,
-      created_at TEXT NOT NULL,
-      updated_at TEXT NOT NULL
-    )`),
-    env.DB.prepare("CREATE INDEX IF NOT EXISTS tool_deliverables_project_tool_idx ON tool_deliverables (project_key, tool_id, created_at DESC)"),
-  ]);
-}
 
 function jsonResponse(data, status = 200) {
   return Response.json(data, { status, headers: { "cache-control": "no-store" } });
 }
 
-async function handleDeliverables(request, env, url) {
+function authenticatedUser(request) {
+  const url = new URL(request.url);
+  let email = String(request.headers.get("oai-authenticated-user-email") || "").trim().toLowerCase();
+  const localPreview = url.hostname === "localhost" || url.hostname === "127.0.0.1" || url.hostname.endsWith(".app.github.dev");
+  if (!email && localPreview) email = "codespaces-preview@dmaic.local";
+  if (!email || !email.includes("@") || email.length > 254) return null;
+  let name = "";
+  const encodedName = request.headers.get("oai-authenticated-user-full-name");
+  if (encodedName && request.headers.get("oai-authenticated-user-full-name-encoding") === "percent-encoded-utf-8") {
+    try { name = decodeURIComponent(encodedName).trim().slice(0, 160); } catch (_) {}
+  }
+  return { email, name: name || email.split("@")[0] };
+}
+
+function requireDatabase(env) {
+  if (!env.DB) throw new Error("La base de datos del proyecto no está conectada.");
+  return env.DB;
+}
+
+async function projectRole(env, projectId, email) {
+  const row = await requireDatabase(env).prepare("SELECT role FROM project_members WHERE project_id = ? AND email = ? AND status = 'active' LIMIT 1").bind(projectId, email).first();
+  return row && row.role ? String(row.role) : "";
+}
+
+function cleanProjectInput(body) {
+  const phase = ["define", "measure", "analyze", "improve", "control"].includes(String(body.current_phase || "")) ? String(body.current_phase) : "define";
+  return {
+    name: String(body.name || "").trim().slice(0, 180),
+    area: String(body.area || "").trim().slice(0, 120),
+    location: String(body.location || "").trim().slice(0, 120),
+    problem: String(body.problem || "").trim().slice(0, 4000),
+    primaryMetric: String(body.primary_metric || "").trim().slice(0, 180),
+    baseline: String(body.baseline || "").trim().slice(0, 120),
+    target: String(body.target || "").trim().slice(0, 120),
+    deadline: String(body.deadline || "").trim().slice(0, 40),
+    currentPhase: phase,
+  };
+}
+
+async function handleProjects(request, env, url, user) {
   try {
-    await ensureDatabase(env);
+    const db = requireDatabase(env);
+    const match = url.pathname.match(/^\/api\/projects\/([^/]+)$/);
+    if (match) {
+      const projectId = decodeURIComponent(match[1]).slice(0, 80);
+      const role = await projectRole(env, projectId, user.email);
+      if (!role) return jsonResponse({ error: "No tienes acceso a este proyecto." }, 403);
+      if (request.method === "GET") {
+        const item = await db.prepare("SELECT id, name, area, location, problem, primary_metric, baseline, target, deadline, current_phase, status, owner_email, created_at, updated_at FROM projects WHERE id = ? LIMIT 1").bind(projectId).first();
+        return item ? jsonResponse({ item: { ...item, role } }) : jsonResponse({ error: "Proyecto no encontrado." }, 404);
+      }
+      if (request.method === "PATCH") {
+        if (!["owner", "sponsor", "leader"].includes(role)) return jsonResponse({ error: "Tu rol no permite editar este proyecto." }, 403);
+        const input = cleanProjectInput(await request.json());
+        if (!input.name) return jsonResponse({ error: "Escribe el nombre del proyecto." }, 400);
+        const now = new Date().toISOString();
+        await db.prepare("UPDATE projects SET name = ?, area = ?, location = ?, problem = ?, primary_metric = ?, baseline = ?, target = ?, deadline = ?, current_phase = ?, updated_at = ? WHERE id = ?").bind(input.name, input.area, input.location, input.problem, input.primaryMetric, input.baseline, input.target, input.deadline, input.currentPhase, now, projectId).run();
+        return jsonResponse({ ok: true, id: projectId, updated_at: now });
+      }
+      return jsonResponse({ error: "Método no permitido." }, 405);
+    }
+    if (request.method === "GET") {
+      const result = await db.prepare("SELECT p.id, p.name, p.area, p.location, p.problem, p.primary_metric, p.baseline, p.target, p.deadline, p.current_phase, p.status, p.owner_email, p.created_at, p.updated_at, m.role FROM projects p JOIN project_members m ON m.project_id = p.id WHERE m.email = ? AND m.status = 'active' ORDER BY p.updated_at DESC LIMIT 100").bind(user.email).all();
+      return jsonResponse({ items: result.results || [] });
+    }
+    if (request.method === "POST") {
+      const body = await request.json();
+      const input = cleanProjectInput(body);
+      if (!input.name) return jsonResponse({ error: "Escribe el nombre del proyecto." }, 400);
+      const id = crypto.randomUUID();
+      const now = new Date().toISOString();
+      const statements = [
+        db.prepare("INSERT INTO projects (id, name, area, location, problem, primary_metric, baseline, target, deadline, current_phase, status, owner_email, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'active', ?, ?, ?)").bind(id, input.name, input.area, input.location, input.problem, input.primaryMetric, input.baseline, input.target, input.deadline, input.currentPhase, user.email, now, now),
+        db.prepare("INSERT INTO project_members (project_id, email, role, status, created_at, updated_at) VALUES (?, ?, 'owner', 'active', ?, ?)").bind(id, user.email, now, now),
+      ];
+      const initialRecords = body.initial_records && typeof body.initial_records === "object" ? body.initial_records : {};
+      for (const [recordType, payload] of Object.entries(initialRecords).slice(0, 8)) {
+        if (!/^[a-z0-9:-]{1,80}$/.test(recordType)) continue;
+        const payloadJson = JSON.stringify(payload);
+        if (payloadJson.length > 1000000) continue;
+        statements.push(db.prepare("INSERT INTO project_records (project_id, record_type, payload_json, updated_by, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?)").bind(id, recordType, payloadJson, user.email, now, now));
+      }
+      await db.batch(statements);
+      return jsonResponse({ item: { id, name: input.name, area: input.area, location: input.location, problem: input.problem, primary_metric: input.primaryMetric, baseline: input.baseline, target: input.target, deadline: input.deadline, current_phase: input.currentPhase, status: "active", owner_email: user.email, role: "owner", created_at: now, updated_at: now } }, 201);
+    }
+    return jsonResponse({ error: "Método no permitido." }, 405);
+  } catch (error) {
+    return jsonResponse({ error: error instanceof Error ? error.message : "No fue posible administrar los proyectos." }, 500);
+  }
+}
+
+async function handleProjectRecord(request, env, url, user) {
+  try {
+    const projectId = String(url.searchParams.get("project_id") || "").slice(0, 80);
+    const recordType = String(url.searchParams.get("record_type") || "").slice(0, 80);
+    if (!projectId || !/^[a-z0-9:-]{1,80}$/.test(recordType)) return jsonResponse({ error: "Faltan proyecto o tipo de registro." }, 400);
+    const role = await projectRole(env, projectId, user.email);
+    if (!role) return jsonResponse({ error: "No tienes acceso a este proyecto." }, 403);
+    const db = requireDatabase(env);
+    if (request.method === "GET") {
+      const item = await db.prepare("SELECT project_id, record_type, payload_json, updated_by, created_at, updated_at FROM project_records WHERE project_id = ? AND record_type = ? LIMIT 1").bind(projectId, recordType).first();
+      if (!item) return jsonResponse({ item: null });
+      let payload = null;
+      try { payload = JSON.parse(String(item.payload_json || "null")); } catch (_) {}
+      return jsonResponse({ item: { project_id: item.project_id, record_type: item.record_type, payload, updated_by: item.updated_by, created_at: item.created_at, updated_at: item.updated_at } });
+    }
+    if (request.method === "PUT") {
+      if (role === "viewer") return jsonResponse({ error: "Tu rol es de consulta." }, 403);
+      const body = await request.json();
+      const payloadJson = JSON.stringify(body.payload == null ? null : body.payload);
+      if (payloadJson.length > 5000000) return jsonResponse({ error: "El registro supera el tamaño permitido de 5 MB." }, 413);
+      const now = new Date().toISOString();
+      await db.prepare("INSERT INTO project_records (project_id, record_type, payload_json, updated_by, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?) ON CONFLICT(project_id, record_type) DO UPDATE SET payload_json = excluded.payload_json, updated_by = excluded.updated_by, updated_at = excluded.updated_at").bind(projectId, recordType, payloadJson, user.email, now, now).run();
+      await db.prepare("UPDATE projects SET updated_at = ? WHERE id = ?").bind(now, projectId).run();
+      return jsonResponse({ ok: true, updated_at: now });
+    }
+    return jsonResponse({ error: "Método no permitido." }, 405);
+  } catch (error) {
+    return jsonResponse({ error: error instanceof Error ? error.message : "No fue posible guardar el registro." }, 500);
+  }
+}
+
+async function handleDeliverables(request, env, url, user) {
+  try {
     if (request.method === "GET") {
       const projectKey = (url.searchParams.get("project_key") || "").slice(0, 120);
       const toolId = (url.searchParams.get("tool_id") || "").slice(0, 60);
       if (!projectKey || !toolId) return jsonResponse({ error: "Faltan proyecto y herramienta." }, 400);
+      if (!await projectRole(env, projectKey, user.email)) return jsonResponse({ error: "No tienes acceso a este proyecto." }, 403);
       const result = await env.DB.prepare("SELECT id, version, project_name, tool_id, tool_name, completion, payload_json, created_at, updated_at FROM tool_deliverables WHERE project_key = ? AND tool_id = ? ORDER BY version DESC LIMIT 12").bind(projectKey, toolId).all();
       return jsonResponse({ items: result.results || [] });
     }
@@ -947,6 +1081,9 @@ async function handleDeliverables(request, env, url) {
       const toolId = String(body.tool_id || "").slice(0, 60);
       const toolName = String(body.tool_name || "").slice(0, 120);
       if (!projectKey || !projectName || !toolId || !toolName || !Array.isArray(body.rows)) return jsonResponse({ error: "El entregable está incompleto." }, 400);
+      const role = await projectRole(env, projectKey, user.email);
+      if (!role) return jsonResponse({ error: "No tienes acceso a este proyecto." }, 403);
+      if (role === "viewer") return jsonResponse({ error: "Tu rol es de consulta." }, 403);
       const dataset = Array.isArray(body.dataset) ? body.dataset.slice(0, 20000) : [];
       const importMeta = body.importMeta && typeof body.importMeta === "object" ? body.importMeta : {};
       const chartConfig = body.chartConfig && typeof body.chartConfig === "object" ? { title: String(body.chartConfig.title || "").slice(0, 120), xLabel: String(body.chartConfig.xLabel || "").slice(0, 60), yLabel: String(body.chartConfig.yLabel || "").slice(0, 60) } : {};
@@ -962,6 +1099,79 @@ async function handleDeliverables(request, env, url) {
     return jsonResponse({ error: "Método no permitido." }, 405);
   } catch (error) {
     return jsonResponse({ error: error instanceof Error ? error.message : "No fue posible guardar el entregable." }, 500);
+  }
+}
+
+async function handleEvidence(request, env, url, user) {
+  try {
+    const db = requireDatabase(env);
+    if (!env.BUCKET) throw new Error("El almacenamiento de evidencias no está conectado.");
+    const downloadMatch = url.pathname.match(/^\/api\/evidence\/([^/]+)\/download$/);
+    if (downloadMatch && request.method === "GET") {
+      const id = decodeURIComponent(downloadMatch[1]).slice(0, 80);
+      const item = await db.prepare("SELECT id, project_id, tool_id, file_name, content_type, size_bytes, object_key, uploaded_by, created_at FROM evidence_files WHERE id = ? LIMIT 1").bind(id).first();
+      if (!item) return new Response("Archivo no encontrado.", { status: 404 });
+      if (!await projectRole(env, String(item.project_id), user.email)) return new Response("Sin acceso.", { status: 403 });
+      const object = await env.BUCKET.get(String(item.object_key));
+      if (!object) return new Response("Archivo no encontrado.", { status: 404 });
+      const headers = new Headers({
+        "content-type": String(item.content_type || "application/octet-stream"),
+        "content-length": String(item.size_bytes || object.size || 0),
+        "content-disposition": `attachment; filename*=UTF-8''${encodeURIComponent(String(item.file_name || "evidencia"))}`,
+        "cache-control": "private, no-store",
+        "x-content-type-options": "nosniff",
+      });
+      return new Response(object.body, { headers });
+    }
+    if (url.pathname !== "/api/evidence") return jsonResponse({ error: "Ruta no encontrada." }, 404);
+    if (request.method === "GET") {
+      const projectId = String(url.searchParams.get("project_id") || "").slice(0, 80);
+      const toolId = String(url.searchParams.get("tool_id") || "").slice(0, 60);
+      if (!projectId || !toolId) return jsonResponse({ error: "Faltan proyecto y herramienta." }, 400);
+      if (!await projectRole(env, projectId, user.email)) return jsonResponse({ error: "No tienes acceso a este proyecto." }, 403);
+      const result = await db.prepare("SELECT id, project_id, tool_id, file_name, content_type, size_bytes, uploaded_by, created_at FROM evidence_files WHERE project_id = ? AND tool_id = ? ORDER BY created_at DESC LIMIT 100").bind(projectId, toolId).all();
+      return jsonResponse({ items: result.results || [] });
+    }
+    if (request.method === "POST") {
+      const form = await request.formData();
+      const projectId = String(form.get("project_id") || "").slice(0, 80);
+      const toolId = String(form.get("tool_id") || "").slice(0, 60);
+      const file = form.get("file");
+      const role = await projectRole(env, projectId, user.email);
+      if (!role) return jsonResponse({ error: "No tienes acceso a este proyecto." }, 403);
+      if (role === "viewer") return jsonResponse({ error: "Tu rol es de consulta." }, 403);
+      if (!file || typeof file.arrayBuffer !== "function") return jsonResponse({ error: "Selecciona un archivo válido." }, 400);
+      const fileName = String(file.name || "evidencia").replace(/[\u0000-\u001f]/g, "").slice(0, 180);
+      const extension = (fileName.split(".").pop() || "").toLowerCase();
+      const allowed = new Set(["pdf", "png", "jpg", "jpeg", "webp", "xlsx", "xls", "xlsm", "csv", "txt", "docx"]);
+      if (!allowed.has(extension)) return jsonResponse({ error: "Formato no permitido. Usa PDF, imagen, Excel, CSV, TXT o DOCX." }, 415);
+      if (!file.size || file.size > 15 * 1024 * 1024) return jsonResponse({ error: "El archivo debe pesar menos de 15 MB." }, 413);
+      const id = crypto.randomUUID();
+      const objectKey = `${projectId}/${toolId}/${id}`;
+      const contentType = String(file.type || "application/octet-stream").slice(0, 120);
+      const now = new Date().toISOString();
+      await env.BUCKET.put(objectKey, await file.arrayBuffer(), { httpMetadata: { contentType }, customMetadata: { projectId, toolId, uploadedBy: user.email } });
+      try {
+        await db.prepare("INSERT INTO evidence_files (id, project_id, tool_id, file_name, content_type, size_bytes, object_key, uploaded_by, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)").bind(id, projectId, toolId, fileName, contentType, Number(file.size), objectKey, user.email, now).run();
+      } catch (error) {
+        await env.BUCKET.delete(objectKey);
+        throw error;
+      }
+      return jsonResponse({ item: { id, project_id: projectId, tool_id: toolId, file_name: fileName, content_type: contentType, size_bytes: Number(file.size), uploaded_by: user.email, created_at: now } }, 201);
+    }
+    if (request.method === "DELETE") {
+      const id = String(url.searchParams.get("id") || "").slice(0, 80);
+      const item = await db.prepare("SELECT id, project_id, object_key FROM evidence_files WHERE id = ? LIMIT 1").bind(id).first();
+      if (!item) return jsonResponse({ error: "Evidencia no encontrada." }, 404);
+      const role = await projectRole(env, String(item.project_id), user.email);
+      if (!role || role === "viewer") return jsonResponse({ error: "No tienes permiso para eliminar esta evidencia." }, 403);
+      await env.BUCKET.delete(String(item.object_key));
+      await db.prepare("DELETE FROM evidence_files WHERE id = ?").bind(id).run();
+      return jsonResponse({ ok: true });
+    }
+    return jsonResponse({ error: "Método no permitido." }, 405);
+  } catch (error) {
+    return jsonResponse({ error: error instanceof Error ? error.message : "No fue posible administrar la evidencia." }, 500);
   }
 }
 
@@ -988,11 +1198,26 @@ async function handleAssistant(request, env) {
 
 export default {
   async fetch(request, env, ctx) {
-    void env;
     void ctx;
     const url = new URL(request.url);
+    const user = authenticatedUser(request);
+    if (url.pathname.startsWith("/api/") && !user) {
+      return jsonResponse({ error: "Inicia sesión para continuar." }, 401);
+    }
+    if (url.pathname === "/api/session") {
+      return jsonResponse({ user });
+    }
+    if (url.pathname === "/api/projects" || url.pathname.startsWith("/api/projects/")) {
+      return handleProjects(request, env, url, user);
+    }
+    if (url.pathname === "/api/project-record") {
+      return handleProjectRecord(request, env, url, user);
+    }
+    if (url.pathname === "/api/evidence" || url.pathname.startsWith("/api/evidence/")) {
+      return handleEvidence(request, env, url, user);
+    }
     if (url.pathname === "/api/deliverables") {
-      return handleDeliverables(request, env, url);
+      return handleDeliverables(request, env, url, user);
     }
     if (url.pathname === "/api/assistant") {
       return handleAssistant(request, env);
@@ -1009,6 +1234,8 @@ export default {
         "cache-control": "public, max-age=60",
         "x-content-type-options": "nosniff",
         "referrer-policy": "strict-origin-when-cross-origin",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "content-security-policy": "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.sheetjs.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'",
       },
     });
   },
