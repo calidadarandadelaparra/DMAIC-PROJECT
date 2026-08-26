@@ -1,26 +1,60 @@
-# Sites Worker ESM starter
+# DMAIC Project Hub
 
-Use this starter for a static microsite, click counter, or simple internal UI whose state is browser-scoped. It has no dependencies and needs no install.
+Plataforma web en español para crear, documentar, revisar y conservar proyectos de mejora continua con la metodología DMAIC.
 
-Edit `worker/index.js`. Use the Sites checkpoint when a coherent milestone is ready to inspect or share; the remote builder then runs the checked-in build and validation scripts. Do not run them as a normal pre-checkpoint step.
+## Funcionalidades
 
-The build copies only `worker/index.js` and `.openai/hosting.json`. Do not add standalone asset files. Embed any essential raster bytes in `worker/index.js` and serve or reference them as a data URL.
+- Dashboard y seguimiento por fases Define, Measure, Analyze, Improve y Control.
+- Portafolio real con proyectos identificados de forma única y cambio seguro entre proyectos.
+- Identidad del usuario proporcionada por el alojamiento y autorización por membresía del proyecto.
+- Guardado centralizado por proyecto para Gantt, Charter, SMART, mediciones y borradores de herramientas, con respaldo local en Codespaces.
+- Biblioteca con 22 herramientas DMAIC editables, guardado automático y formato imprimible.
+- Project Charter y constructor de objetivos SMART editables e imprimibles en A4.
+- SIPOC visual con pasos de proceso ampliables y numeración automática.
+- Campos guiados y listas de selección para reducir ambigüedad entre integrantes.
+- Gantt editable con avance porcentual de alto contraste, columnas de contexto fijas y zoom progresivo con botones − / + entre mes, semana, día y hora.
+- Cálculos automáticos para Pareto, matriz de soluciones, FMEA, capacidad y SPC.
+- Resultados con el formato propio de cada método: Ishikawa, Pareto, 5 porqués, matriz de interesados, Gantt, gráficas de línea base y control, capacidad, VOC–CTQ y planes visuales.
+- Las herramientas cuyo estándar profesional es matricial —como FMEA, MSA, DOE y plan de control— conservan su tabla técnica con resaltado y cálculos automáticos.
+- Entregables ejecutivos con control de completitud, evidencia y estado.
+- Historial persistente de versiones en D1.
+- Esquema preparado para roles de propietario, patrocinador, líder, integrante y consulta.
+- Evidencias reales en almacenamiento privado con metadatos, autorización por proyecto, descarga y eliminación controlada.
+- Exportación profesional a PDF en A4 horizontal o vertical según el entregable.
 
-For targeted diagnosis after a remote build failure, the same commands are available in the Sites Linux environment:
+## Criterios UX/UI aplicados
+
+La interfaz prioriza una superficie de trabajo clara y predecible:
+
+- Estado del sistema visible después de guardar, revisar o exportar.
+- Lenguaje alineado con DMAIC y con el trabajo real del equipo.
+- Jerarquía consistente entre acciones primarias, secundarias y destructivas.
+- Reconocimiento antes que memoria mediante guías, etiquetas y siguiente acción.
+- Controles con objetivos táctiles amplios, foco de teclado visible y mayor legibilidad.
+- PDF compacto con metadatos, control documental y responsables de revisión.
+- Flujo común de cuatro pasos: elegir, completar, revisar e imprimir.
+- Formularios con ayudas breves en el punto de decisión y mensajes accionables.
+
+Referencias de diseño y metodología:
+
+- Jakob Nielsen, [10 Usability Heuristics for User Interface Design](https://www.nngroup.com/articles/ten-usability-heuristics/).
+- W3C, [Web Content Accessibility Guidelines 2.2](https://www.w3.org/WAI/WCAG22/quickref/).
+- Don Norman, *The Design of Everyday Things*, edición revisada y ampliada, Basic Books, 2013.
+- Steve Krug, *Don't Make Me Think, Revisited*, New Riders, 2014.
+- Jeff Gothelf y Josh Seiden, *Lean UX*, 3.ª edición, O'Reilly, 2021.
+- Kim Goodwin, *Designing for the Digital Age*, Wiley, 2009.
+- ASQ, [DMAIC Process](https://asq.org/quality-resources/dmaic), [Quality Tools and Templates](https://asq.org/quality-resources/quality-tools), [Voice of the Customer](https://asq.org/quality-resources/voice-of-the-customer) y [FMEA](https://asq.org/quality-resources/fmea).
+- NIST/SEMATECH, [e-Handbook of Statistical Methods](https://www.itl.nist.gov/div898/handbook/).
+- AIAG y VDA, [FMEA Handbook](https://www.aiag.org/training-and-resources/manuals/details/FMEAAV-1).
+- GOV.UK Design System, [Complete multiple tasks](https://design-system.service.gov.uk/patterns/complete-multiple-tasks/) y [Question pages](https://design-system.service.gov.uk/patterns/question-pages/).
+
+## Desarrollo
+
+La aplicación se implementa como un Worker ESM sin dependencias. El código principal vive en `worker/index.js`.
 
 ```sh
 bash scripts/build.sh
 node scripts/validate-artifact.mjs
 ```
 
-The deterministic build produces:
-
-```text
-dist/
-├── .openai/
-│   └── hosting.json
-└── server/
-    └── index.js
-```
-
-`dist/server/index.js` is an ES module with a default export containing `fetch(request, env, ctx)`. Edit `worker/index.js`, not the generated file under `dist/`.
+La compilación genera `dist/server/index.js`, el manifiesto de alojamiento y las migraciones de la base de datos.
