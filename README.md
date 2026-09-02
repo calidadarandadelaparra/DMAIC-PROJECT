@@ -1,4 +1,14 @@
-# Sites Worker ESM starter
+# DMAIC Project Hub
+
+Plataforma web guiada para desarrollar proyectos DMAIC, completar herramientas Lean y generar entregables visuales listos para revisión o PDF.
+
+## Demo pública
+
+La aplicación está preparada para publicarse en GitHub Pages desde la raíz de la rama `main`.
+
+Incluye Project Charter, constructor de objetivos SMART, biblioteca de herramientas editables, SIPOC visual, versiones locales por proyecto e impresión a PDF.
+
+## Fuente del servidor
 
 Use this starter for a static microsite, click counter, or simple internal UI whose state is browser-scoped. It has no dependencies and needs no install.
 
